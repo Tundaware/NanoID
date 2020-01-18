@@ -29,6 +29,12 @@ public class ID {
   public static let defaultSize = UInt(21)
   public static let defaultRandomizer: RandomizerProtocol = Randomizers.secure
 
+  /// Initialize a new ID instance
+  ///
+  /// - Parameters:
+  ///   - alphabet: the default alphabet to use
+  ///   - size: the default size for new ids
+  ///   - randomizer: the default randomizer to use
   public init(
     alphabet: Alphabet = ID.defaultAlphabet,
     size: UInt = ID.defaultSize,
@@ -39,6 +45,12 @@ public class ID {
     self.randomizer = randomizer
   }
 
+  /// Generate a new identifier
+  ///
+  /// - Parameters:
+  ///   - alphabet: alphabet to use, exclude to use instance default
+  ///   - size: size to use, exclude to use instance default
+  ///   - randomizer: randomizer to use, exclude to use instance default
   public func generate(
     alphabet: Alphabet? = nil,
     size: UInt? = nil,

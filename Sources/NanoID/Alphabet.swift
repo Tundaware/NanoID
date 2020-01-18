@@ -24,23 +24,33 @@ extension ID {
   public struct Alphabet {
     let characters: [Character]
 
-    init(_ alphabet: String...) {
+    /// Initializes an alphabet given one or more strings
+    /// - Parameter alphabet: Strings to build the alphabet from
+    public init(_ alphabet: String...) {
       self.characters = Array(alphabet.joined())
     }
 
-    var uInt32Size: UInt32 {
+    /// Returns the size of the alphabet as a UInt32
+    public var uInt32Size: UInt32 {
       return UInt32(self.characters.count)
     }
 
-    var intSize: Int {
+    /// Returns the size of the alphabet as a Int
+    public var intSize: Int {
       return self.characters.count
     }
 
-    func character(at index: Int) -> Character {
+    /// Returns a single character from the alphabet
+    ///
+    /// - Parameter index: The position of the character to return
+    public func character(at index: Int) -> Character {
       return self.characters[index]
     }
 
-    func character(from byte: UInt8) -> Character {
+    /// Returns a single character from the alphabet given a byte
+    ///
+    /// - Parameter byte: The byte used to determine the character's position
+    public func character(from byte: UInt8) -> Character {
       return self.characters[Int(byte) % self.characters.count]
     }
   }
