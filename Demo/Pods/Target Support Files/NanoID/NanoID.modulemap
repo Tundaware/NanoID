@@ -1,0 +1,6 @@
+framework module NanoID {
+  umbrella header "NanoID-umbrella.h"
+
+  export *
+  module * { export * }
+}
