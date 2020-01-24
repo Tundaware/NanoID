@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = "NanoID"
-  spec.version      = "1.0.0"
+  spec.version      = "1.0.1"
   spec.summary      = "Secure, unique, and configurable ID generator"
   spec.description  = <<-DESC
   A Swift implementation of NanoID for generating configurable length unique, secure, IDs.
