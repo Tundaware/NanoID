@@ -1,4 +1,4 @@
-[![SwiftPM compatible](https://img.shields.io/badge/SwiftPM-compatible-orange.svg)](#swift-package-manager) [![Cocoapods compatible](https://img.shields.io/cocoapods/v/NanoID)](https://cocoapods.org/pods/NanoID) [![GitHub release](https://img.shields.io/github/release/Tundaware/NanoID/all.svg)](https://github.com/Tundaware/NanoID/releases) ![Swift 5.1](https://img.shields.io/badge/Swift-5.1-orange.svg) ![platforms](https://img.shields.io/badge/platform-iOS%20%7C%20macOS%20%7C%20tvOS%20%7C%20watchOS-blue.svg)
+[![SwiftPM compatible](https://img.shields.io/badge/SwiftPM-compatible-orange.svg)](#swift-package-manager) [![Cocoapods compatible](https://img.shields.io/cocoapods/v/NanoID)](https://cocoapods.org/pods/NanoID) [![GitHub release](https://img.shields.io/github/release/Tundaware/NanoID/all.svg)](https://github.com/Tundaware/NanoID/releases) ![Swift 5.1](https://img.shields.io/badge/Swift-5.1-orange.svg) ![platforms](https://img.shields.io/cocoapods/p/NanoID) [![Build Status](https://travis-ci.com/Tundaware/NanoID.svg?branch=master)](https://travis-ci.com/Tundaware/NanoID)
 
 # Nano ID
 
