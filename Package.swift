@@ -6,7 +6,10 @@ import PackageDescription
 let package = Package(
   name: "NanoID",
   platforms: [
-    .iOS(.v13),
+    .iOS(.v10),
+    .tvOS(.v10),
+    .macOS(.v10_11),
+    .watchOS(.v4)
   ],
   products: [
     .library(
