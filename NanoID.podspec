@@ -1,23 +1,27 @@
-Pod::Spec.new do |spec|
-  spec.name         = "NanoID"
-  spec.version      = "1.0.1"
-  spec.summary      = "Secure, unique, and configurable ID generator"
-  spec.description  = <<-DESC
-  A Swift implementation of NanoID for generating configurable length unique, secure, IDs.
+Pod::Spec.new do |s|
+  s.name         = "NanoID"
+  s.version      = "1.0.2"
+  s.summary      = "Secure, unique, and configurable ID generator"
+  s.description  = <<-DESC
+  Another Swift implementation of Nano ID. Includes secure & insecure randomizers.
                    DESC
 
-  spec.swift_version = "5.1"
+  s.homepage     = "https://github.com/Tundaware/NanoID"
+  s.license      = { :type => "MIT", :file => "LICENSE" }
+  s.author             = { "George Cox" => "george@tundaware.com" }
+  s.social_media_url   = "https://twitter.com/Tundaware"
 
-  spec.homepage     = "https://github.com/Tundaware/NanoID"
-  spec.license      = { :type => "MIT", :file => "LICENSE" }
-  spec.author             = { "George Cox" => "george@tundaware.com" }
-  spec.social_media_url   = "https://twitter.com/tundaware"
-  spec.ios.deployment_target = '11.0'
-  spec.tvos.deployment_target = '11.0'
-  spec.watchos.deployment_target = '4.0'
-  spec.osx.deployment_target = '10.12'
+  s.source = {
+    :git => "https://github.com/Tundaware/NanoID.git",
+    :tag => s.version.to_s
+  }
+  s.swift_version = '5.1'
 
-  spec.source       = { :git => "https://github.com/Tundaware/NanoID.git", :tag => "v#{spec.version.to_s}" }
+  s.ios.deployment_target = '10.0'
+  s.tvos.deployment_target = '10.0'
+  s.watchos.deployment_target = '4.0'
+  s.osx.deployment_target = '10.11'
 
-  spec.source_files  = "Sources/NanoID/**/*.swift"
+  s.source_files = 'Sources/NanoID/**/*.swift'
+  s.framework = 'CryptoKit'
 end
