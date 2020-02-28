@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "NanoID"
-  s.version      = "1.0.2"
+  s.version      = "1.0.3"
   s.summary      = "Secure, unique, and configurable ID generator"
   s.description  = <<-DESC
   Another Swift implementation of Nano ID. Includes secure & insecure randomizers.
@@ -23,5 +23,4 @@ Pod::Spec.new do |s|
   s.osx.deployment_target = '10.11'
 
   s.source_files = 'Sources/NanoID/**/*.swift'
-  s.framework = 'CryptoKit'
 end
