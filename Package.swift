@@ -14,6 +14,7 @@ let package = Package(
   products: [
     .library(
       name: "NanoID",
+      type: .dynamic,
       targets: ["NanoID"]),
   ],
   dependencies: [],
